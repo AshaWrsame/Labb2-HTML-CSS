@@ -86,7 +86,7 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
     grid-area:
-    "header"
+
     "main-page"
     "footer";}
     .home-class {
@@ -113,6 +113,7 @@ body {
                 align-items: center;
             }
         }
+
         h1 {
             position: relative;
             color: rgb(204, 125, 125);
@@ -136,6 +137,8 @@ body {
             padding: 1rem;
             list-style-type:none;
         }
+
+
 
         .box-title {
         font-size: 2rem;
@@ -163,29 +166,32 @@ body {
        .about-box p { font-size: large;
     text-align: center;
 padding: 1rem;}
+
         .pris {font-size: larger;
             text-align: center;
         }
+
 
 /* styla location*/
 
   .hitta-class {margin: 3rem;
             padding-left: 3rem;
-            background-color:(241, 219, 190) ;
+            background-color:#ddc8c8;
             float:inline-end;
             width: 40%;
 }
 
-.img-location {
+        .img-location {
              width:300px ;
+             display:;
            }
 
-.hittahit {
+        .hittahit {
             margin-bottom: 1rem;
             padding: 1rem;
             }
-.kontakt-class {
-    margin-left: 1rem;
+        .kontakt-class {
+    margin-left: 2rem;
     margin-top: 2rem;
 }
 .kontakt-titel {
@@ -193,4 +199,50 @@ padding: 1rem;}
 }
 .footer {text-align: center;
           margin-bottom: 1rem;
+}
+
+
+/* media queries for body*/
+
+@media screen and (min-width: 360px) and (max-width:980px) {
+    h1 {text-align: center;}
+    .menu-grid{
+        display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(1, 1fr) ;
+    background-color: rgb(236, 206, 211);
+    padding: 1rem;
+    list-style-type:none;}
+    .box-title {
+        font-size: 1rem;
+        text-align: center;
+        }
+        .box {
+            background-color: aliceblue;
+           text-align: center;
+           font-size: 0.8rem;
+           padding: 1rem;
+            }
+            .pris {font-size: small;
+                text-align: center;
+            }
+            .about-box h2 {
+
+                    font-size: 1.2rem;
+                    margin-top: 1rem;}
+
+            .about-box p { font-size: small;
+
+                    padding: 1rem;}
+
+        .last-section {
+            display: grid;
+            grid-template-areas:
+            "hitta-class"
+            "kontakt-class";
+        }
+
+
+
+
 }
