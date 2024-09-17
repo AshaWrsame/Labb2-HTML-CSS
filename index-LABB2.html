@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MRS Cake</title>
-    <link href="index-LABB2.css" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger Menu</title>
+    <link rel="stylesheet" href="index-LABB2.css">
+    <!-- Link from Font-Awesome Libraries-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--  -->
+</head>
+<body>
+    <header>
+    <nav>
 
-  </head>
-  <nav>
-    <a href="#Home" id="logo"> MRS Cake </a>
-        <input type="checkbox" id="hamburger" class="hamburger-checkbox"/>
-        <label for="hamburger" class="hambtn">
-            <i class="fa-solid fa-bars"></i>
-        </label>
-        <ul class="nav-list">
-            <li> <a href="#Omoss" class="active"> Om oss </a></li>
-            <li> <a href="#Hittahit" > Hitta Hit</a></li>
-            <li> <a href="#kommentera" > Kommenter</a> </li>
-
+        <ul class='nav-bar'>
+            <li class='logo'> MRS Cake</li>
+            <input type='checkbox' id='check'/>
+            <span class="nav-menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">Menu</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Locations</a></li>
+                <li><a href="">Contact & Comments</a></li>
+                <label for="check" class="close-nav-menu"><i class="fas fa-times"></i></label>
+            </span>
+            <label for="check" class="open-nav-menu"><i class="fas fa-bars"></i></label>
+        <!-- "fas fa-times" represents a close icon, usually depicted as an "X" or a cross. .
+                  "fas fa-bar" represents a "hamburger" menu icon. -->
         </ul>
-  </nav>
-  <body>
+    </nav>
+
+    </header>
     <main class="main-page">
         <!-- Section introduction-->
         <section id="home" class="home-class">
@@ -29,32 +39,69 @@
             <p>Välkommen till en av världens unikaste kaffeer </p>
             <img src="img/Mainbild.webp" alt="Huvudbild">
         </section>
+<!--section menu -->
+        <section id="meny" class="meny-section">
+            <h2> Meny </h2>
+            <div class="meny-grid">
+                <div class="meny-box">
+                   <h3> Mackor & Frallor </h3>
+                  <ol>
+                    <li>Klassisk Räkmacka</li>
+                    <li>Kalkon- och Avokadomacka</li>
+                    <li>Smörgås med Hummus och Grönsaker</li>
+                    <li>Ostfralla</li>
+                    <li>Rostbiff Fralla</li>
+                  </ol>
+                </div>
+                <div class="meny-box">
+                    <h3> Bakverk </h3>
+                    <ol>
+                       <li>Kanelbullar</li>
+                       <li>Kladdkaka</li>
+                       <li>Cheesecake (Jordgub, Blåbär eller Citron )</li>
+                       <li>Franska makaroner </li>
+                       <li>Scones</li>
+                    </ol>
+                </div>
+                <div class="meny-box">
+                    <h3> Varma Drycker </h3>
+                    <ol>
+                       <li>Café Latte</li>
+                       <li>Cappuccino </li>
+                       <li>Americano</li>
+                       <li>Te</li>
+                       <li>Varm choklad </li>
+                    </ol>
+                </div>
 
+            </div>
+
+        </section>
 
 <!--section about us -->
-        <Section id="Omoss" class="omoss-section">
-        <H2>  Om Oss </H2>
+        <section id="omoss" class="omoss-section">
+
         <div class="omoss-grid">
 
             <div class="omoss-box">
+                <h2>  Om Oss </h2>
             <p>
                   MRS Cake tog sin begynnelse 2017 i Stockholm, när skaparen Roy Fares formade denna härliga konditoriupplevelse. Med en passion för hantverket och en kärlek till den svenska café-kulturen, strävar MR Cake efter att erbjuda något extra till alla besökare. </p>
 
                   <p> Här får du smaka på högkvalitativa, USA-inspirerade bakverk som får dina smaklökar att jubla. Omgiven av en varm och inbjudande atmosfär kommer ett besök hos MR Cake att bli en minnesvärd upplevelse som du längtar tillbaka till.</p>
             </div>
 
-            <div id="img-omoss" class="omoss-box">  <img src="img/bule.webp" alt="kardemummabulle"> </div>
-
         </div>
-        </Section>
+
+        </section>
 <!--Section Find locations -->
         <section id="Hittahit" class="hitta-class">
         <h2 > Hitta Hit</h2>
         <div class="hittahit">
             <p> Ni hittar oss vid </p>
-        </div class="hittahit-img">
-        <img src="img/map.jpg" alt="location">
-        <div>
+        </div>
+        <div class="hittahit-img">
+            <img src="img/map.jpg" alt="location">
         </div>
 
         </section>
