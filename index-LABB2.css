@@ -25,21 +25,14 @@
     text-decoration: none;
     color: black;
     text-align: center;
-    transition: 0.15s ease-in-out;
+    transition: background-color 0.15s ease-in-out;
     position: relative;
     text-transform: uppercase;
-
      }
 
 
 .nav-menu div a:hover {
-    background-color: yellowgreen ;
-    position: relative;
-
-    transition: 1s;
-}
-
-
+    background-color: yellowgreen ;}
 
 
     .close-nav-menu {
@@ -60,7 +53,7 @@
         display: none;
         top: 50%;
         right: 20px;
-        transform: translateY(-50%);-------------------
+        transform: translateY(-50%);
     }
 
     #check {display: none;}
@@ -85,3 +78,119 @@
     #check:checked ~.nav-menu {right: 0;}
     }
 /* nav styling done and validated */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+    color: black;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-area:
+    "header"
+    "main-page"
+    "footer";}
+    .home-class {
+        grid-area: home;
+        position:relative;
+        height: 100vh;
+        background-image: url(img/Mainbild.webp);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+        @media (max-width: 980px)  {
+            .home-class {
+                grid-area: home;
+                position: relative;
+                height: 50vh;
+                background-image: url(img/Mainbild.webp);
+                background-size: cover;
+                background-position: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        h1 {
+            position: relative;
+            color: rgb(204, 125, 125);
+            text-shadow: 2px 2px #ddc8c8;
+            font-size: 4rem;
+            z-index: 2;
+            text-align: center;
+        }
+        .menu-section h2 {
+            color: rgb(144, 102, 184);
+            font-size: 2.2rem;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .menu-grid {
+            display: grid;
+            gap: 1.5rem;
+            grid-template-columns: repeat(3, 1fr) ;
+            background-color: rgb(236, 206, 211);
+            padding: 1rem;
+            list-style-type:none;
+        }
+
+        .box-title {
+        font-size: 2rem;
+        text-align: center;
+        }
+
+        .box {
+        background-color: aliceblue;
+       text-align: center;
+       font-size: 1.2rem;
+       padding: 1rem;
+        }
+
+       .box ol {list-style: none;}
+.about-box {
+    background-color: rgb(241, 219, 190);
+    margin-top: 2rem;
+}
+       .about-box h2 {
+        color: rgb(144, 102, 184);
+            font-size: 2.2rem;
+            text-align: center;
+            margin-bottom: 1rem;
+       }
+       .about-box p { font-size: large;
+    text-align: center;
+padding: 1rem;}
+        .pris {font-size: larger;
+            text-align: center;
+        }
+
+/* styla location*/
+
+  .hitta-class {margin: 3rem;
+            padding-left: 3rem;
+            background-color:(241, 219, 190) ;
+            float:inline-end;
+            width: 40%;
+}
+
+.img-location {
+             width:300px ;
+           }
+
+.hittahit {
+            margin-bottom: 1rem;
+            padding: 1rem;
+            }
+.kontakt-class {
+    margin-left: 1rem;
+    margin-top: 2rem;
+}
+.kontakt-titel {
+    margin-bottom: 1rem;
+}
+.footer {text-align: center;
+          margin-bottom: 1rem;
+}
