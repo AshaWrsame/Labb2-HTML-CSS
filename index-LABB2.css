@@ -205,12 +205,14 @@ padding: 1rem;}
 /* media queries for body*/
 
 @media screen and (min-width: 360px) and (max-width:980px) {
-    h1 {text-align: center;}
+    h1 {text-align: center;
+    font-size: 3rem;}
+    .menu-section h2 {font-size: 2rem;}
     .menu-grid{
         display: grid;
     gap: 1rem;
     grid-template-columns: repeat(1, 1fr) ;
-    background-color: rgb(236, 206, 211);
+
     padding: 1rem;
     list-style-type:none;}
     .box-title {
@@ -232,8 +234,10 @@ padding: 1rem;}
                     margin-top: 1rem;}
 
             .about-box p { font-size: small;
-
                     padding: 1rem;}
+                    .hitta-class {width: 70%;
+                    height: auto;}
+            .img-location {display: none;}
 
         .last-section {
             display: grid;
