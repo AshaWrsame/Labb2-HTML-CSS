@@ -8,11 +8,17 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(241, 205, 211);
-    padding: 1rem;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    background-color: var(--color2);
+    padding: 12px 20px;
 }
-
-nav a {
+.logo img {width: 40px;}
+.menu {display: flex;}
+.menu li {padding-left: 30px;}
+.menu li a {
+    display: inline-block;
     text-decoration: none;
     text-transform: capitalize;
     color: black;
