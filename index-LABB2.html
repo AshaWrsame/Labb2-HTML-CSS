@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hamburger Menu</title>
+    <title>MRS Cake</title>
     <link rel="stylesheet" href="index-LABB2.css">
     <!-- Link from Font-Awesome Libraries-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,21 +14,19 @@
     <header>
     <nav>
 
-        <ul class='nav-bar'>
-            <li class='logo'> MRS Cake</li>
-            <input type='checkbox' id='check'/>
-            <span class="nav-menu">
-                <li><a href="">Home</a></li>
-                <li><a href="">Menu</a></li>
-                <li><a href="">About Us</a></li>
-                <li><a href="">Locations</a></li>
-                <li><a href="">Contact & Comments</a></li>
+        <div class='nav-bar'>
+            <div class='logo'> MRS Cake</div>
+            <input type='checkbox' id='check' class="check"/>
+            <section class="nav-menu">
+                <div><a href="#">Home</a></div>
+                <div><a href="#menu">Menu</a></div>
+                <div><a href="#">About Us</a></div>
+                <div><a href="#">Locations</a></div>
+                <div><a href="#">Contact</a></div>
                 <label for="check" class="close-nav-menu"><i class="fas fa-times"></i></label>
-            </span>
+            </section>
             <label for="check" class="open-nav-menu"><i class="fas fa-bars"></i></label>
-        <!-- "fas fa-times" represents a close icon, usually depicted as an "X" or a cross. .
-                  "fas fa-bar" represents a "hamburger" menu icon. -->
-        </ul>
+        </div>
     </nav>
 
     </header>
@@ -40,7 +38,7 @@
             <img src="img/Mainbild.webp" alt="Huvudbild">
         </section>
 <!--section menu -->
-        <section id="meny" class="meny-section">
+        <section id="menu" class="meny-section">
             <h2> Meny </h2>
             <div class="meny-grid">
                 <div class="meny-box">
