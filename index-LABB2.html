@@ -1,140 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MRS Cake</title>
     <link rel="stylesheet" href="index-LABB2.css">
-    <!-- Link from Font-Awesome Libraries-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!--  -->
+    <!-- Link from Font-Awesome Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
+
 <body>
     <header>
-    <nav>
-
-        <div class='nav-bar'>
-            <div class='logo'> MRS Cake <i class="fa-solid fa-mug-hot"></i></div>
-            <input type='checkbox' id='check' class="check"/>
-            <section class="nav-menu">
-                <div><a href="#home">Home</a></div>
-                <div><a href="#menu">Meny</a></div>
-                <div><a href="#aboutus">Om oss</a></div>
-                <div><a href="#location">Hitta</a></div>
-                <div><a href="#contact">Kontakt uppgifter</a></div>
-                <label for="check" class="close-nav-menu"><i class="fas fa-times"></i></label>
-            </section>
-            <label for="check" class="open-nav-menu"><i class="fas fa-bars"></i></label>
-        </div>
-    </nav>
+        <nav>
+            <div class='nav-bar'>
+                <div class='logo'>
+                    MRS Cake <i class="fa-solid fa-mug-hot"></i>
+                </div>
+                <input type='checkbox' id='check' class="check" />
+                <section class="nav-menu">
+                    <div><a href="#home">Home</a></div>
+                    <div><a href="#menu">Meny</a></div>
+                    <div><a href="#aboutus">Om oss</a></div>
+                    <div><a href="#location">Hitta</a></div>
+                    <div><a href="#kontakta">Kontakt uppgifter</a></div>
+                    <label for="check" class="close-nav-menu"><i class="fas fa-times"></i></label>
+                </section>
+                <label for="check" class="open-nav-menu"><i class="fas fa-bars"></i></label>
+            </div>
+        </nav>
     </header>
 
     <main class="main-page">
-        <!-- Section introduction-->
+        <!-- Section introduction -->
         <section id="home" class="home-class">
             <div class="overlay"></div>
-
         </section>
 
-
-<!--section menu -->
-                 <h1>  Välkommen </h1>
+        <!-- Section menu -->
+        <h1>Välkommen</h1>
         <section id="menu" class="menu-section">
-            <h2> Meny </h2>
+            <h2>Meny</h2>
             <div class="menu-grid">
                 <div id="box-mackor" class="box">
-
-                  <ol>
-                    <li  class="box-title">Mackor & Frallor </li>
-                    <li>Klassisk Räkmacka</li>
-                    <li>Kalkon- och Avokadomacka</li>
-                    <li>Smörgås med Hummus och Grönsaker</li>
-                    <li>Ostfralla</li>
-                    <li>Rostbiff Fralla</li>
-                  </ol>
+                    <ol>
+                        <li class="box-title">Mackor & Frallor</li>
+                        <li>Klassisk Räkmacka</li>
+                        <li>Kalkon- och Avokadomacka</li>
+                        <li>Smörgås med Hummus och Grönsaker</li>
+                        <li>Ostfralla</li>
+                        <li>Rostbiff Fralla</li>
+                    </ol>
                 </div>
                 <div id="box-bakverk" class="box">
                     <ol>
-                        <li class="box-title">Bakverk </li>
-                       <li>Kanelbullar</li>
-                       <li>Kladdkaka</li>
-                       <li>Cheesecake (Jordgub, Blåbär eller Citron )</li>
-                       <li>Franska makaroner </li>
-                       <li>Scones</li>
+                        <li class="box-title">Bakverk</li>
+                        <li>Kanelbullar</li>
+                        <li>Kladdkaka</li>
+                        <li>Cheesecake (Jordgub, Blåbär eller Citron)</li>
+                        <li>Franska makaroner</li>
+                        <li>Scones</li>
                     </ol>
-
                 </div>
                 <div id="box-dryck" class="box">
-
                     <ol>
-                        <li class="box-title"> Varma Drycker</li>
-                       <li>Café Latte</li>
-                       <li>Cappuccino </li>
-                       <li>Americano</li>
-                       <li>Te</li>
-                       <li>Varm choklad </li>
+                        <li class="box-title">Varma Drycker</li>
+                        <li>Café Latte</li>
+                        <li>Cappuccino</li>
+                        <li>Americano</li>
+                        <li>Te</li>
+                        <li>Varm choklad</li>
                     </ol>
                 </div>
-                <div class="pris"><p> Mackor och frallor 55 kr </p>
-                    <p>Bakverk 45kr</p> <p>Varma drycker 40kr</p></div>
+                <div class="pris">
+                    <p>Mackor och frallor 55 kr</p>
+                    <p>Bakverk 45 kr</p>
+                    <p>Varma drycker 40 kr</p>
+                </div>
             </div>
-
         </section>
 
-<!--section about us -->
+        <!-- Section about us -->
         <section id="aboutus" class="about-section">
-
             <div class="about-box">
-                <h2>  Om Oss </h2>
-            <p>
-                  MRS Cake tog sin begynnelse 2017 i Stockholm, när skaparen Roy Fares formade denna härliga konditoriupplevelse. Med en passion för hantverket och en kärlek till den svenska café-kulturen, strävar MR Cake efter att erbjuda något extra till alla besökare. </p>
-
-                  <p> Här får du smaka på högkvalitativa, USA-inspirerade bakverk som får dina smaklökar att jubla. Omgiven av en varm och inbjudande atmosfär kommer ett besök hos MR Cake att bli en minnesvärd upplevelse som du längtar tillbaka till.</p>
+                <h2>Om Oss</h2>
+                <p>
+                    MRS Cake tog sin begynnelse 2017 i Stockholm, när skaparen Roy Fares formade denna härliga konditoriupplevelse. Med en passion för hantverket och en kärlek till den svenska café-kulturen, strävar MR Cake efter att erbjuda något extra till alla besökare.
+                </p>
+                <p>
+                    Här får du smaka på högkvalitativa, USA-inspirerade bakverk som får dina smaklökar att jubla. Omgiven av en varm och inbjudande atmosfär kommer ett besök hos MR Cake att bli en minnesvärd upplevelse som du längtar tillbaka till.
+                </p>
             </div>
-
         </section>
-<!--Section Find locations -->
+
+        <!-- Section Find locations -->
         <article class="last-section">
             <section id="location" class="hitta-class">
+                <h2>Hitta Hit <i class="fa-solid fa-location-dot"></i></h2>
+                <p>
+                    4 Gryffindor Way, Trollkarlsgatan, Hogwarts, 12345 <br>
+                    "Det är den perfekta platsen för magiska äventyr och episka uppdrag!"
+                </p>
+                <img src="img/map.jpg" alt="location" class="img-location">
+            </section>
 
-            <h2 > Hitta Hit <i class="fa-solid fa-location-dot"></i></h2>
-            <p> 4 Gryffindor Way, Trollkarlsgatan, Hogwarts, 12345 <br> "Det är den perfekta platsen för magiska äventyr och episka uppdrag!"</p>
-
-            <img src="img/map.jpg" alt="location" class="img-location">
-
-        </section>
-
-        <section id="kontakt" class="kontakt-class">
-            <h2 class="kontakt-titel">Kontakt uppgifter </h2>
-            <p> Adress:
-                4 Gryffindor Way, Trollkarlsgatan, Hogwarts, 12345 <br>
-
-                Telefon: <br>
-                +46 123 456 789 <br>
-
-                E-post: <br>
-                info@kaffekoppenscafe.se <br>
-
-                Webbplats: <br>
-                www.kaffekoppenscafe.se <br>
-
-                Öppettider: <br>
-                Måndag - Fredag: 08:00 - 18:00 <br>
+            <section id="kontakt" class="kontakt-class">
+                <h2 class="kontakt-titel">Kontakt uppgifter</h2>
+                <p>
+                    Adress: 4 Gryffindor Way, Trollkarlsgatan, Hogwarts, 12345 <br>
+                    Telefon: +46 123 456 789 <br>
+                    E-post: info@mrscake.se <br>
+                    Webbplats: www.mrscakecafe.se <br>
+                    Öppettider: <br>
+                    Måndag - Fredag: 08:00 - 18:00 <br>
                 <strong>Lördag: 09:00 - 16:00 <br>
-                Söndag: Stängt</strong> <br> </p>
-        </section>
-    </article>
+                    Söndag: Stängt</strong> <br>
+                </p>
+            </section>
+        </article>
     </main>
 
+    <footer class="footer">
 
-
-
-
-<footer class="footer">
-<p> &copy; 2024 FEU ITHS</p>
-</footer>
-  </body>
-
+        <span>&copy; 2024 FEU ITHS</span>
+    </footer>
+</body>
 
 </html>
+<!--All kod validerad-->

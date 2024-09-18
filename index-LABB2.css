@@ -1,67 +1,79 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;}
+    box-sizing: border-box;
+}
 
-    .nav-bar {
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 600;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: relative;
-        background-color: rgb(248, 230, 233);
-        padding: 12px 20px;
-    }
-    .logo {
-        font-size: large;
-    }
-    .nav-menu {display: flex;}
+.nav-bar {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: rgb(248, 230, 233);
+    padding: 12px 20px;
+}
 
-    .nav-menu div {padding-left: 30px;}
+.logo {
+    font-size: large;
+}
 
-     .nav-menu div a {
+.nav-menu {
+    display: flex;
+}
+
+.nav-menu div {
+    padding-left: 30px;
+}
+
+.nav-menu div a {
     text-decoration: none;
     color: black;
     text-align: center;
     transition: background-color 0.15s ease-in-out;
     position: relative;
     text-transform: uppercase;
-     }
-
+}
 
 .nav-menu div a:hover {
-    background-color: yellowgreen ;}
+    background-color: rgb(160, 136, 163);
+    outline: 5rem;
+    border-radius: 0.2rem;
+    border-width: 3rem;
+}
 
+.close-nav-menu {
+    position: absolute;
+    color: rgb(129, 100, 133);
+    cursor: pointer;
+    font-size: 1.6rem;
+    display: none;
+    top: 20px;
+    right: 20px;
+}
 
-    .close-nav-menu {
-        position: absolute;
-        color: blue;
-        cursor: pointer;
-        font-size: 1.6rem;
-        display: none;
-        top: 20px;
-        right: 20px;
-    }
+.open-nav-menu {
+    position: absolute;
+    color: rgb(115, 87, 119);
+    cursor: pointer;
+    font-size: 1.6rem;
+    display: none;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
 
-    .open-nav-menu {
-        position: absolute;
-        color: blue;
-        cursor: pointer;
-        font-size: 1.6rem;
-        display: none;
-        top: 50%;
-        right: 20px;
-        transform: translateY(-50%);
-    }
+#check {
+    display: none;
+}
 
-    #check {display: none;}
-
-    @media (max-width:980px){
+/* Media queries for the nav bar */
+@media (max-width: 980px) {
     .nav-menu {
-        background-color: aqua;
-        width: 40%;
+        background-color: rgb(243, 205, 212);
+        width: 32%;
         height: 100vh;
         justify-content: center;
         position: fixed;
@@ -72,181 +84,223 @@
         z-index: 100;
         transition: 0.2s;
     }
-    .nav-menu div { margin-top: 50px;}
-    .nav-menu div a {padding: 10px;}
-    .open-nav-menu, .close-nav-menu {display: block;}
-    #check:checked ~.nav-menu {right: 0;}
-    }
-/* nav styling done and validated */
 
+
+    .nav-menu div {
+        margin-top: 50px;
+    }
+
+    .nav-menu div a {
+        padding: 10px;
+    }
+
+    .open-nav-menu,
+    .close-nav-menu {
+        display: block;
+    }
+
+    #check:checked ~ .nav-menu {
+        right: 0;
+    }
+}
+
+/* Body styling */
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.7;
     color: black;
     display: grid;
     grid-template-rows: auto 1fr auto;
-    grid-area:
+    grid-area: "main-page" "footer";
+}
 
-    "main-page"
-    "footer";}
+.home-class {
+    grid-area: home;
+    position: relative;
+    height: 100vh;
+    background-image: url(img/Mainbild.webp);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+h1 {
+    position: relative;
+    color: rgb(140, 77, 77);
+    text-shadow: 2px 2px #a07e7e;
+    font-size: 4rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    z-index: 2;
+    text-align: center;
+}
+
+.menu-section h2 {
+    color: rgb(161, 84, 84);
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.menu-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgb(223, 208, 210);
+    padding: 1rem;
+    list-style-type: none;
+}
+
+.box-title {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.box {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+.box ol {
+    list-style: none;
+}
+
+.about-box {
+    background-color: rgb(223, 208, 210);
+    margin-top: 2rem;
+}
+
+.about-box h2 {
+    color: rgb(0, 0, 0);
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.about-box p {
+    font-size: large;
+    text-align: center;
+    padding: 1rem;
+}
+
+.pris {
+    font-size: larger;
+    text-align: center;
+}
+
+/* Styling for location */
+.hitta-class {
+    margin: 3rem;
+    padding-left: 3rem;
+    background-color: #ddc8c8;
+    float: inline-end;
+    width: 40%;
+    line-height: 2;
+    font-style: italic;
+}
+
+.img-location {
+    width: 300px;
+    display: block; /* Fixed display property */
+}
+
+.hittahit {
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.kontakt-class {
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.kontakt-titel {
+    margin-bottom: 1rem;
+}
+
+.footer {
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-left: 3rem;
+}
+
+/* Media queries for body */
+@media screen and (min-width: 360px) and (max-width: 980px) {
     .home-class {
         grid-area: home;
-        position:relative;
-        height: 100vh;
+        position: relative;
+        height: 50vh;
         background-image: url(img/Mainbild.webp);
         background-size: cover;
         background-position: center;
         display: flex;
         justify-content: center;
         align-items: center;
-        }
-        @media (max-width: 980px)  {
-            .home-class {
-                grid-area: home;
-                position: relative;
-                height: 50vh;
-                background-image: url(img/Mainbild.webp);
-                background-size: cover;
-                background-position: center;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-        }
-
-        h1 {
-            position: relative;
-            color: rgb(204, 125, 125);
-            text-shadow: 2px 2px #ddc8c8;
-            font-size: 4rem;
-            z-index: 2;
-            text-align: center;
-        }
-        .menu-section h2 {
-            color: rgb(144, 102, 184);
-            font-size: 2.2rem;
-            text-align: center;
-            margin-bottom: 1rem;
-        }
-
-        .menu-grid {
-            display: grid;
-            gap: 1.5rem;
-            grid-template-columns: repeat(3, 1fr) ;
-            background-color: rgb(236, 206, 211);
-            padding: 1rem;
-            list-style-type:none;
-        }
-
-
-
-        .box-title {
-        font-size: 2rem;
+    }
+    /* imgage responsive */
+    h1 {
         text-align: center;
-        }
+        font-size: 2rem;
+        font-family: sans-serif;
+        text-shadow: none;
+        font-style: italic;
+    }
+    .menu-section h2 {
+        font-size: 1.3rem;
+    }
 
-        .box {
-        background-color: aliceblue;
-       text-align: center;
-       font-size: 1.2rem;
-       padding: 1rem;
-        }
+    .menu-grid {
+        gap: 1rem;
+        background-color: white;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 1rem;
+        list-style-type: none;
+    }
 
-       .box ol {list-style: none;}
-.about-box {
-    background-color: rgb(241, 219, 190);
-    margin-top: 2rem;
-}
-       .about-box h2 {
-        color: rgb(144, 102, 184);
-            font-size: 2.2rem;
-            text-align: center;
-            margin-bottom: 1rem;
-       }
-       .about-box p { font-size: large;
-    text-align: center;
-padding: 1rem;}
-
-        .pris {font-size: larger;
-            text-align: center;
-        }
-
-
-/* styla location*/
-
-  .hitta-class {margin: 3rem;
-            padding-left: 3rem;
-            background-color:#ddc8c8;
-            float:inline-end;
-            width: 40%;
-}
-
-        .img-location {
-             width:300px ;
-             display:;
-           }
-
-        .hittahit {
-            margin-bottom: 1rem;
-            padding: 1rem;
-            }
-        .kontakt-class {
-    margin-left: 2rem;
-    margin-top: 2rem;
-}
-.kontakt-titel {
-    margin-bottom: 1rem;
-}
-.footer {text-align: center;
-          margin-bottom: 1rem;
-}
-
-
-/* media queries for body*/
-
-@media screen and (min-width: 360px) and (max-width:980px) {
-    h1 {text-align: center;
-    font-size: 3rem;}
-    .menu-section h2 {font-size: 2rem;}
-    .menu-grid{
-        display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(1, 1fr) ;
-
-    padding: 1rem;
-    list-style-type:none;}
     .box-title {
         font-size: 1rem;
-        text-align: center;
-        }
-        .box {
-            background-color: aliceblue;
-           text-align: center;
-           font-size: 0.8rem;
-           padding: 1rem;
-            }
-            .pris {font-size: small;
-                text-align: center;
-            }
-            .about-box h2 {
+    }
 
-                    font-size: 1.2rem;
-                    margin-top: 1rem;}
+    .box {
+        background-color: rgb(253, 246, 246);
+        font-size: 0.8rem;
+    }
 
-            .about-box p { font-size: small;
-                    padding: 1rem;}
-                    .hitta-class {width: 70%;
-                    height: auto;}
-            .img-location {display: none;}
+    .pris {
+        font-size: small;
+    }
 
-        .last-section {
-            display: grid;
-            grid-template-areas:
+
+    .about-box h2 {
+        font-size: 1.4rem;
+        margin-top: 1rem;
+    }
+
+    .about-box p {
+        font-size: small;
+    }
+
+    .hitta-class {
+        width: 70%;
+        height: auto;
+    }
+
+    .img-location {
+        display: none;
+    }
+
+    .last-section {
+        display: grid;
+        grid-template-areas:
             "hitta-class"
             "kontakt-class";
-        }
-
-
-
-
+    }
 }
+/* All kod validerad*/
